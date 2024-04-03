@@ -1,0 +1,31 @@
+# Uncomment the next line to define a global platform for your project
+source 'https://cdn.cocoapods.org/'
+# google-filament
+#source 'https://github.com/google/filament.git'
+
+platform :ios, '12.4'
+  inhibit_all_warnings!
+  install! 'cocoapods',
+    :warn_for_unused_master_specs_repo => false
+
+
+def libs_Filament
+  #pod 'Filament', :git => 'https://github.com/google/filament.git', :tag => 'v1.50.6' #:commit => '25f017b'
+  pod 'Filament'
+    #:path => 'filament/Filament.podspec'
+    #:subspecs => ['filament', 'camutils', 'gltfio_core', 'math', 'utils', 'viewer', 'ktxreader']
+    #:podspec => 'https://github.com/google/filament/blob/main/ios/CocoaPods/Filament.podspec'
+    #, '~> 1.51.2'
+    #:source => 'google-filament-releases-download-v1.51.2-filament-v1.51.2-ios.tgz'
+    #:git => 'https://github.com/google/filament.git', :tag => 'v1.51.2'
+    
+end
+
+target 'OCDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for OCDemo
+  libs_Filament
+  
+end

@@ -1,0 +1,58 @@
+PODS:
+  - Filament (1.51.0):
+    - Filament/camutils (= 1.51.0)
+    - Filament/filamat (= 1.51.0)
+    - Filament/filament (= 1.51.0)
+    - Filament/filameshio (= 1.51.0)
+    - Filament/gltfio_core (= 1.51.0)
+    - Filament/image (= 1.51.0)
+    - Filament/ktxreader (= 1.51.0)
+    - Filament/math (= 1.51.0)
+    - Filament/tsl (= 1.51.0)
+    - Filament/uberz (= 1.51.0)
+    - Filament/utils (= 1.51.0)
+    - Filament/viewer (= 1.51.0)
+  - Filament/camutils (1.51.0):
+    - Filament/math
+  - Filament/filamat (1.51.0):
+    - Filament/math
+    - Filament/utils
+  - Filament/filament (1.51.0):
+    - Filament/math
+    - Filament/utils
+  - Filament/filameshio (1.51.0):
+    - Filament/filament
+  - Filament/gltfio_core (1.51.0):
+    - Filament/filament
+    - Filament/ktxreader
+    - Filament/uberz
+  - Filament/image (1.51.0):
+    - Filament/filament
+  - Filament/ktxreader (1.51.0):
+    - Filament/filament
+    - Filament/image
+  - Filament/math (1.51.0)
+  - Filament/tsl (1.51.0)
+  - Filament/uberz (1.51.0):
+    - Filament/filamat
+    - Filament/tsl
+    - Filament/utils
+  - Filament/utils (1.51.0):
+    - Filament/tsl
+  - Filament/viewer (1.51.0):
+    - Filament/filament
+    - Filament/gltfio_core
+
+DEPENDENCIES:
+  - Filament
+
+SPEC REPOS:
+  trunk:
+    - Filament
+
+SPEC CHECKSUMS:
+  Filament: 218fa4355aebaf78450cbefd6819cd09991ce278
+
+PODFILE CHECKSUM: 76d048339eb443bb32767207652d2358bae34119
+
+COCOAPODS: 1.15.2
