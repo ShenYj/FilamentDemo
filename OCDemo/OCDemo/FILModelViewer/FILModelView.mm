@@ -134,8 +134,7 @@ const float kSensitivity = 100.0f;
     _cameraFocalLength = 28.0f;
     _camera->setExposure(kAperture, kShutterSpeed, kSensitivity);
     
-    _swapChain = _engine->createSwapChain((__bridge void*)self.layer);
-    //SwapChain::CONFIG_TRANSPARENT
+    _swapChain = _engine->createSwapChain((__bridge void*)self.layer, filament::backend::SWAP_CHAIN_CONFIG_TRANSPARENT);
     
     _materialProvider = createUbershaderProvider(_engine, UBERARCHIVE_DEFAULT_DATA, UBERARCHIVE_DEFAULT_SIZE);
     
