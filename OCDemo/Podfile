@@ -11,7 +11,7 @@ platform :ios, '12.4'
 
 def libs_Filament
   #pod 'Filament', :git => 'https://github.com/google/filament.git', :tag => 'v1.50.6' #:commit => '25f017b'
-  pod 'Filament'
+  pod 'Filament', '~> 1.51.2'
     #:path => 'filament/Filament.podspec'
     #:subspecs => ['filament', 'camutils', 'gltfio_core', 'math', 'utils', 'viewer', 'ktxreader']
     #:podspec => 'https://github.com/google/filament/blob/main/ios/CocoaPods/Filament.podspec'
