@@ -106,12 +106,12 @@ const float kSensitivity = 100.0f;
 
 - (void)initCommon {
     self.contentScaleFactor = UIScreen.mainScreen.nativeScale;
-#if FILAMENT_APP_USE_OPENGL
-    [self initializeGLLayer];
-    _engine = Engine::create(Engine::Backend::OPENGL);
-#elif FILAMENT_APP_USE_METAL
+#if FILAMENT_APP_USE_METAL && METAL_AVAILABLE
     [self initializeMetalLayer];
     _engine = Engine::create(Engine::Backend::METAL);
+#else
+    [self initializeGLLayer];
+    _engine = Engine::create(Engine::Backend::OPENGL);
 #endif
     self.backgroundColor = [UIColor clearColor];
     _renderer = _engine->createRenderer();
@@ -302,7 +302,7 @@ const float kSensitivity = 100.0f;
 #pragma mark Private
 
 - (void)initializeMetalLayer {
-#if METAL_AVAILABLE
+#if FILAMENT_APP_USE_METAL && METAL_AVAILABLE
     CAMetalLayer* metalLayer = (CAMetalLayer*)self.layer;
     metalLayer.pixelFormat = MTLPixelFormatBGRA8Unorm;
     metalLayer.opaque = YES;
@@ -328,7 +328,7 @@ const float kSensitivity = 100.0f;
     const uint32_t height = self.bounds.size.height * self.contentScaleFactor;
     _view->setViewport({0, 0, width, height});
     
-#if FILAMENT_APP_USE_METAL
+#if FILAMENT_APP_USE_METAL && METAL_AVAILABLE
     CAMetalLayer* metalLayer = (CAMetalLayer*)self.layer;
     metalLayer.drawableSize = CGSizeMake(width, height);
 #endif
@@ -364,10 +364,10 @@ const float kSensitivity = 100.0f;
 }
 
 + (Class)layerClass {
-#if FILAMENT_APP_USE_OPENGL
-    return [CAEAGLLayer class];
-#elif FILAMENT_APP_USE_METAL
+#if FILAMENT_APP_USE_METAL && METAL_AVAILABLE
     return [CAMetalLayer class];
+#else
+    return [CAEAGLLayer class];
 #endif
 }
 
