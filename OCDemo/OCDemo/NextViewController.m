@@ -27,7 +27,10 @@
     //CGRect renderRect = CGRectMake(0, originalY, self.view.bounds.size.width, self.view.bounds.size.width);
     self.filamentManager = [[FilamentManager alloc] initWithRect: self.view.bounds superView:self.view];
     
+    // bug 1
     NSString *glbFilePath = [[NSBundle mainBundle] pathForResource:@"c0ba1ab7e9104b288859389fe6d774ba_1057.glb" ofType:nil];
+    // bug 2
+    //NSString *glbFilePath = [[NSBundle mainBundle] pathForResource:@"c0ba1ab7e9104b288859389fe6d774ba_1032.glb" ofType:nil];
     NSLog(@"glbFilePath: %@", glbFilePath);
     
     [self.filamentManager setGLBModelFilePath:glbFilePath callback:^{

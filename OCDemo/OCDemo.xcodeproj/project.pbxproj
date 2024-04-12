@@ -18,6 +18,7 @@
 		F73D35AF2BBCF91B00923B45 /* model_page_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F73D35AE2BBCF91B00923B45 /* model_page_bg.png */; };
 		F76E88D32BA3CED900494F50 /* FilamentManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = F76E88D22BA3CED900494F50 /* FilamentManager.mm */; };
 		F76FC7DA2BA0614000EA5272 /* FILModelView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F76FC7D82BA0613F00EA5272 /* FILModelView.mm */; };
+		F7964C0C2BC9111300A477DC /* c0ba1ab7e9104b288859389fe6d774ba_1032.glb in Resources */ = {isa = PBXBuildFile; fileRef = F7964C0B2BC9111200A477DC /* c0ba1ab7e9104b288859389fe6d774ba_1032.glb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		F76E88D22BA3CED900494F50 /* FilamentManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FilamentManager.mm; sourceTree = "<group>"; };
 		F76FC7D82BA0613F00EA5272 /* FILModelView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FILModelView.mm; sourceTree = "<group>"; };
 		F76FC7D92BA0613F00EA5272 /* FILModelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FILModelView.h; sourceTree = "<group>"; };
+		F7964C0B2BC9111200A477DC /* c0ba1ab7e9104b288859389fe6d774ba_1032.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = c0ba1ab7e9104b288859389fe6d774ba_1032.glb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		F711672227E47D0800BEC3B4 /* OCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F7964C0B2BC9111200A477DC /* c0ba1ab7e9104b288859389fe6d774ba_1032.glb */,
 				F720C1C12BBBA6C300B3786A /* c0ba1ab7e9104b288859389fe6d774ba_1057.glb */,
 				F73D35AE2BBCF91B00923B45 /* model_page_bg.png */,
 				F711672927E47D0800BEC3B4 /* ViewController.h */,
@@ -192,6 +195,7 @@
 				F73D35AF2BBCF91B00923B45 /* model_page_bg.png in Resources */,
 				F70996902BA2E4B900FE9E3B /* default_env_ibl.ktx in Resources */,
 				F70996912BA2E4B900FE9E3B /* default_env_skybox.ktx in Resources */,
+				F7964C0C2BC9111300A477DC /* c0ba1ab7e9104b288859389fe6d774ba_1032.glb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
