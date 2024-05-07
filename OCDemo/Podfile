@@ -1,5 +1,6 @@
 # Uncomment the next line to define a global platform for your project
 source 'https://cdn.cocoapods.org/'
+
 # google-filament
 #source 'https://github.com/google/filament.git'
 
@@ -10,15 +11,11 @@ platform :ios, '12.4'
 
 
 def libs_Filament
-  #pod 'Filament', :git => 'https://github.com/google/filament.git', :tag => 'v1.50.6' #:commit => '25f017b'
-  pod 'Filament', '~> 1.51.2'
-    #:path => 'filament/Filament.podspec'
-    #:subspecs => ['filament', 'camutils', 'gltfio_core', 'math', 'utils', 'viewer', 'ktxreader']
+  pod 'Filament', '~> 1.51.6'
     #:podspec => 'https://github.com/google/filament/blob/main/ios/CocoaPods/Filament.podspec'
-    #, '~> 1.51.2'
-    #:source => 'google-filament-releases-download-v1.51.2-filament-v1.51.2-ios.tgz'
-    #:git => 'https://github.com/google/filament.git', :tag => 'v1.51.2'
-    
+    #:subspecs => ['filament', 'camutils', 'gltfio_core', 'math', 'utils', 'viewer', 'ktxreader']
+    #:source => 'google-filament-releases-download-v1.51.4-filament-v1.51.4-ios.tgz'
+    #:git => 'https://github.com/google/filament.git', :tag => 'v1.51.4'
 end
 
 target 'OCDemo' do
