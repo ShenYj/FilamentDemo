@@ -1,58 +1,58 @@
 PODS:
-  - Filament (1.51.6):
-    - Filament/camutils (= 1.51.6)
-    - Filament/filamat (= 1.51.6)
-    - Filament/filament (= 1.51.6)
-    - Filament/filameshio (= 1.51.6)
-    - Filament/gltfio_core (= 1.51.6)
-    - Filament/image (= 1.51.6)
-    - Filament/ktxreader (= 1.51.6)
-    - Filament/math (= 1.51.6)
-    - Filament/tsl (= 1.51.6)
-    - Filament/uberz (= 1.51.6)
-    - Filament/utils (= 1.51.6)
-    - Filament/viewer (= 1.51.6)
-  - Filament/camutils (1.51.6):
+  - Filament (1.52.0):
+    - Filament/camutils (= 1.52.0)
+    - Filament/filamat (= 1.52.0)
+    - Filament/filament (= 1.52.0)
+    - Filament/filameshio (= 1.52.0)
+    - Filament/gltfio_core (= 1.52.0)
+    - Filament/image (= 1.52.0)
+    - Filament/ktxreader (= 1.52.0)
+    - Filament/math (= 1.52.0)
+    - Filament/tsl (= 1.52.0)
+    - Filament/uberz (= 1.52.0)
+    - Filament/utils (= 1.52.0)
+    - Filament/viewer (= 1.52.0)
+  - Filament/camutils (1.52.0):
     - Filament/math
-  - Filament/filamat (1.51.6):
-    - Filament/math
-    - Filament/utils
-  - Filament/filament (1.51.6):
+  - Filament/filamat (1.52.0):
     - Filament/math
     - Filament/utils
-  - Filament/filameshio (1.51.6):
+  - Filament/filament (1.52.0):
+    - Filament/math
+    - Filament/utils
+  - Filament/filameshio (1.52.0):
     - Filament/filament
-  - Filament/gltfio_core (1.51.6):
+  - Filament/gltfio_core (1.52.0):
     - Filament/filament
     - Filament/ktxreader
     - Filament/uberz
-  - Filament/image (1.51.6):
+  - Filament/image (1.52.0):
     - Filament/filament
-  - Filament/ktxreader (1.51.6):
+  - Filament/ktxreader (1.52.0):
     - Filament/filament
     - Filament/image
-  - Filament/math (1.51.6)
-  - Filament/tsl (1.51.6)
-  - Filament/uberz (1.51.6):
+  - Filament/math (1.52.0)
+  - Filament/tsl (1.52.0)
+  - Filament/uberz (1.52.0):
     - Filament/filamat
     - Filament/tsl
     - Filament/utils
-  - Filament/utils (1.51.6):
+  - Filament/utils (1.52.0):
     - Filament/tsl
-  - Filament/viewer (1.51.6):
+  - Filament/viewer (1.52.0):
     - Filament/filament
     - Filament/gltfio_core
 
 DEPENDENCIES:
-  - Filament (~> 1.51.6)
+  - Filament (= 1.52.0)
 
 SPEC REPOS:
   trunk:
     - Filament
 
 SPEC CHECKSUMS:
-  Filament: e5a4c99f4f07722de9d134b7664915607a3548b0
+  Filament: dffdda64e198c6eb4a10dbe1044b47e171af275d
 
-PODFILE CHECKSUM: 2002e2a621aa2ca03190124ccbce21e98c9063f2
+PODFILE CHECKSUM: e4febfa7eba2feddee2c0faf6a53e8397d9d3c41
 
 COCOAPODS: 1.15.2

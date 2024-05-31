@@ -11,7 +11,7 @@ platform :ios, '12.4'
 
 
 def libs_Filament
-  pod 'Filament', '~> 1.51.6'
+  pod 'Filament', '= 1.52.0'
     #:podspec => 'https://github.com/google/filament/blob/main/ios/CocoaPods/Filament.podspec'
     #:subspecs => ['filament', 'camutils', 'gltfio_core', 'math', 'utils', 'viewer', 'ktxreader']
     #:source => 'google-filament-releases-download-v1.51.4-filament-v1.51.4-ios.tgz'
